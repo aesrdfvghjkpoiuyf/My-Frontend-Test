@@ -1,0 +1,331 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100vh;
+  width: 600%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: black;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  animation: slide 30s linear infinite;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.slide {
+  width: 16.6667%;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.controls {
+  position: relative;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0.9%;
+  transform: translateY(-50%);
+  font-size: 38px;
+  padding: 1px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.9%;
+  transform: translateY(-50%);
+  font-size: 38px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.active {
+  color: rgb(239, 238, 238);
+  background-color: none;
+  background: none;
+}
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 5vh;
+  height: 12vh;
+  margin: 0;
+}
+@font-face {
+  font-family: "klavika-light-webfont";
+  src: url("font/klavika-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#slide2_text {
+  position: relative;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+
+#slide3_text {
+  position: relative;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+
+#slide4_text {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -23%;
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+#slide5_text {
+  position: relative;
+  top: 50%;
+  left: -59%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+#slide6_text {
+  position: relative;
+  top: 50%;
+  left: -90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+
+#slide7_text {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -208%;
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+#slide8_text {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -223%;
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+
+#slide1_text {
+  top: 50%;
+  left: 31%;
+  position: absolute;
+  top: -3%;
+  left: 1%;
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.4px;
+  text-underline-position: under;
+  font-family: "klavika-light-webfont", sans-serif;
+  line-height: 1.4;
+  word-spacing: 0.24em;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.social-icons a.gmail {
+  color: white;
+  font-size: 14px;
+}
+
+.social-icons a.facebook {
+  color: white;
+  font-size: 14px;
+}
+
+.social-icons a.twitter {
+  color: white;
+  font-size: 14px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-img {
+  position: relative;
+  display: block;
+  margin: auto;
+  max-width: 10vh;
+  max-height: 14vh;
+  animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+    bounce 1s ease-in-out 1s infinite alternate;
+}
+
+.main-content {
+  display: none;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.loader-fog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 8%
+  );
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.controls button {
+  border: none;
+
+  width: 22px;
+  height: 22px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.controls button.active {
+  background-color: white;
+  color: white;
+  border: none;
+}
